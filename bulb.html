@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bb{
+            border: 1px solid black;
+            height: 50px;
+            width: 90px;
+            border-radius: 50px;
+            background-color: red;
+        }
+        .bc{
+            border: 1px solid black;
+            height: 50px;
+            width: 90px;
+            border-radius: 50px;
+            background-color: green;
+        }
+        div{
+            border: 1px solid black;
+            height: 100px;
+            width: 190px;
+            border-radius: 50px;
+            background-color: grey;
+            padding-top: 45px;
+            padding-left: 30px;
+            padding-right: 30px;
+            position: absolute;
+            top: 500px;
+            left: 750px;
+        }
+        .don{
+            /* transform: rotate(180deg); */
+           margin-left: 700px;
+            opacity: 0;
+        }
+        body{
+            /* background-image: url("https://wallpaperaccess.com/full/3928401.jpg"); */
+            background-color: black;
+
+        }
+    </style>
+</head>
+<body>
+    <img src="" alt="" id="bon" class="don">
+    <div>
+        <button onclick="bulbOn()" class="bb">On</button>
+      
+         <button onclick="bulbOff()" id="bon" class="bc">Off</button>
+    </div>
+   
+    
+    <script>
+        function bulbOn()
+        {
+            document.getElementById('bon').src="https://e0.pxfuel.com/wallpapers/585/85/desktop-wallpaper-street-light-heat-street-light.jpg"
+            document.getElementById("bon").style.opacity="1";
+        }
+        function bulbOff()
+        {
+            document.getElementById('bon').src=""
+            document.getElementById("bon").style.opacity="0";
+        }
+
+    </script>
+</body>
+</html>
